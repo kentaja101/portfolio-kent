@@ -1,0 +1,28 @@
+{% extends 'layouts/base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<header id="header">
+    <div class="container">
+
+    <h1><a href="index.html">Jonathan Kent Filbert</a></h1>
+    <h2>I'm a 3rd years <span>Computer Science student</span> from Binus Indonesia</h2>
+
+    <nav id="navbar" class="navbar">
+        <ul>
+        <li><a class="nav-link active" href="{% url 'homepage' %}">Home</a></li>
+        <li><a class="nav-link" href="{% url 'about' %}">About</a></li>
+        <li><a class="nav-link" href="{% url 'resume' %}">Resume</a></li>
+        
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+    <div class="social-links">
+        <a href="https://wa.link/j59ztv" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.instagram.com/jonathan.kent24/" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://linkedin.com/in/jonathan-kent-889814292" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    </div>
+</header>
+{% endblock %}
